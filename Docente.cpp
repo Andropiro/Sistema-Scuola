@@ -83,6 +83,11 @@ class Docente // : public Persona
 		
 		//metodo che rende disponibile le caratteristiche del docente
 		//sotto forma di stringa
+	
+		/*
+			R.L. Perché ti complichi la vita? non era più semplice ritornare una char* ?
+			da rifare.
+		*/
 		void toString(char stringa[])
 		{
 			//concatenazione caratteristiche docente
@@ -100,6 +105,14 @@ class Docente // : public Persona
 				
 			
 		}
+	
+		/*
+			Preferivo una pugnalata nel rene.
+			non passare la stringa come parametro. e secondo rinominalo in stampaInfo che sarà il metodo 
+			astratto da implementare da persona.
+			
+			stampa il ritorno della funzione toString.
+		*/
 		
 		//funzione che stampa la stringa passata per parametro
 		void stampaStringa(char stringa[])
@@ -139,7 +152,7 @@ int main()
 	//utilizzata per la scelta del tempo indeterminato
 	char scelta[LUNGHEZZA_RISPOSTA];
 	
-	//inizializzazione stringa che verr� stampata
+	//inizializzazione stringa che verrà stampata
 	char caratteristiche_docente[MAX_LUNGHEZZA_STRINGA] = "";
 
 	Docente docente;
